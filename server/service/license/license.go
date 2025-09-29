@@ -3,7 +3,6 @@ package license
 import (
 	"context"
 	_ "embed"
-	"slices"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
