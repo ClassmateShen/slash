@@ -42,7 +42,7 @@ const SignIn: React.FC = () => {
           {!workspaceStore.setting.disallowPasswordAuth ? (
             <PasswordAuthForm />
           ) : (
-            
+            <p className="w-full text-2xl mt-2 dark:text-gray-500" hidden></p>
           )}
           {!workspaceStore.setting.disallowUserRegistration && !workspaceStore.setting.disallowPasswordAuth && (
             <p className="w-full mt-4 text-sm">
@@ -54,7 +54,7 @@ const SignIn: React.FC = () => {
           )}
           {workspaceStore.setting.identityProviders.length > 0 && (
             <>
-              <Divider className="!my-4">{t("common.or")}</Divider>
+              
               <div className="w-full flex flex-col space-y-2">
                 {workspaceStore.setting.identityProviders.map((identityProvider) => (
                   <Button
