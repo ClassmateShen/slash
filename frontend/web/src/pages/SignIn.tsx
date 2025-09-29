@@ -42,7 +42,7 @@ const SignIn: React.FC = () => {
           {!workspaceStore.setting.disallowPasswordAuth ? (
             <PasswordAuthForm />
           ) : (
-            <p className="w-full text-2xl mt-2 dark:text-gray-500">Password auth is not allowed.</p>
+            
           )}
           {!workspaceStore.setting.disallowUserRegistration && !workspaceStore.setting.disallowPasswordAuth && (
             <p className="w-full mt-4 text-sm">
