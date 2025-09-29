@@ -34,4 +34,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: yourselfhosted/slash:test
+          tags: shentx/slash:latest
