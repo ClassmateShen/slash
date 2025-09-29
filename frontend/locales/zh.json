@@ -19,7 +19,7 @@
     "sign-up": "注册",
     "sign-out": "退出登录",
     "create-your-account": "创建账号",
-    "sign-in-with": 使用 {{provider}} 登录"
+    "sign-in-with": "使用 {{provider}} 登录"
   },
   "analytics": {
     "self": "分析",
