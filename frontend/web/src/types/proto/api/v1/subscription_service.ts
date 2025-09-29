@@ -25,10 +25,10 @@ export function planTypeFromJSON(object: any): PlanType {
       return PlanType.PLAN_TYPE_UNSPECIFIED;
     case 1:
     case "FREE":
-      return PlanType.FREE;
+      return PlanType.ENTERPRISE;
     case 2:
     case "PRO":
-      return PlanType.PRO;
+      return PlanType.ENTERPRISE;
     case 3:
     case "ENTERPRISE":
       return PlanType.ENTERPRISE;
@@ -43,9 +43,9 @@ export function planTypeToNumber(object: PlanType): number {
   switch (object) {
     case PlanType.PLAN_TYPE_UNSPECIFIED:
       return 0;
-    case PlanType.FREE:
+    case PlanType.ENTERPRISE:
       return 1;
-    case PlanType.PRO:
+    case PlanType.ENTERPRISE:
       return 2;
     case PlanType.ENTERPRISE:
       return 3;
